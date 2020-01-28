@@ -25,15 +25,29 @@ row.append(col3);//append all 3 columns to the row
 $(".container").append(row); //append row to container
 
 var saveBtn = $('.saveBtn');
-
-
+var text9 = $('.text9');
  
 
-saveBtn.on('click',localStorage.setItem("text9",("textarea")));
-localStorage.getItem.innerHTML("textarea", "text9");
-// document.getElementById("text9").innerHTML = localStorage.getItem("result"); 
+// saveBtn.on('click',localStorage.setItem("text9",("textarea")));
+// localStorage.getItem.innerHTML("textarea", "text9");
+// text9.innerHTML = localStorage.getItem(""); 
+
+
+text9.innerText = localStorage.getItem("textarea")
+localStorage.getItem("input");
+text9.innerText += text9.value
+localStorage.setItem("input", text9.value);
+
 
 console.log(localStorage);
+console.log(text9);
+console.log(saveBtn);
+
+
+
+
+
+
 
 ///10am row//////////////////////
 var row = $(`<div data-time='10' id='10' class="row">`);
