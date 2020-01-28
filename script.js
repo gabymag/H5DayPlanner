@@ -24,10 +24,15 @@ row.append(col2);
 row.append(col3);//append all 3 columns to the row
 $(".container").append(row); //append row to container
 
+var saveBtn = $('.saveBtn');
 
-saveBtn.on('click',localStorage.setItem("text9", JSON.stringify("textarea")));
-// localStorage.getItem("textarea", "text9");
-document.getElementById("text9").innerHTML = localStorage.getItem("result"); 
+
+ 
+
+saveBtn.on('click',localStorage.setItem("text9",("textarea")));
+localStorage.getItem.innerHTML("textarea", "text9");
+// document.getElementById("text9").innerHTML = localStorage.getItem("result"); 
+
 console.log(localStorage);
 
 ///10am row//////////////////////
