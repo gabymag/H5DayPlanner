@@ -1,6 +1,6 @@
 var m = moment();
 console.log(m);
-
+var saveBtn = $('.saveBtn');
 
 
 // moment(displayDay).format('mm/dd/yyyy');
@@ -23,6 +23,12 @@ row.append(col1);
 row.append(col2);
 row.append(col3);//append all 3 columns to the row
 $(".container").append(row); //append row to container
+
+
+saveBtn.on('click',localStorage.setItem("text9", JSON.stringify("textarea")));
+// localStorage.getItem("textarea", "text9");
+document.getElementById("text9").innerHTML = localStorage.getItem("result"); 
+console.log(localStorage);
 
 ///10am row//////////////////////
 var row = $(`<div data-time='10' id='10' class="row">`);
@@ -107,4 +113,9 @@ row.append(col3);
 $(".container").append(row);
 
 
+
+
+
 });
+
+
