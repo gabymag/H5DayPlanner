@@ -1,15 +1,10 @@
 var m = moment();
+moment().hour()///tells you the hour that is currently
 console.log(m);
 var saveBtn = $('.saveBtn');
-
-
 // moment(displayDay).format('mm/dd/yyyy');
 
 // var displayMoment = document.getElementById('displayDay');
-
-
-
-
 
 $(document).ready(function(){
 $("#displayWeekday").html(moment().format( "dddd"));
@@ -23,20 +18,24 @@ row.append(col1);
 row.append(col2);
 row.append(col3);//append all 3 columns to the row
 $(".container").append(row); //append row to container
-
+var row9Text = localStorage.getItem('rowText9')
 var saveBtn = $('.saveBtn');
-var text9 = $('.text9');
- 
+var text9 = $('#text9');
+text9.val(row9Text);
 
-// saveBtn.on('click',localStorage.setItem("text9",("textarea")));
+saveBtn.on('click',function(){
+    var textValue = text9.val();
+    console.log(textValue);
+    localStorage.setItem('rowText9', textValue);
+    console.log(this);
+  
+});
 // localStorage.getItem.innerHTML("textarea", "text9");
 // text9.innerHTML = localStorage.getItem(""); 
-
-
-text9.innerText = localStorage.getItem("textarea")
-localStorage.getItem("input");
-text9.innerText += text9.value
-localStorage.setItem("input", text9.value);
+// text9.innerText = localStorage.getItem("textarea")
+// localStorage.getItem("input");
+// text9.innerText += text9.value
+// localStorage.setItem("input", text9.value);
 
 
 console.log(localStorage);
