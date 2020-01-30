@@ -27,9 +27,9 @@ saveBtn.on('click',function(){
     var textValue = text9.val();
     console.log(textValue);
     localStorage.setItem('rowText9', textValue);
-    console.log(this);
-  
+    console.log(this);  
 });
+
 // localStorage.getItem.innerHTML("textarea", "text9");
 // text9.innerHTML = localStorage.getItem(""); 
 // text9.innerText = localStorage.getItem("textarea")
@@ -57,6 +57,18 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row10Text = localStorage.getItem('rowText10')
+var saveBtn = $('.saveBtn');
+var text10 = $('#text10');
+text10.val(row10Text);
+
+saveBtn.on('click',function(){
+    var textValue = text10.val();
+    console.log(textValue);
+    localStorage.setItem('rowText10', textValue);
+    console.log(this);  
+});
+
 
 // 11am row
 var row = $(`<div data-time='11' id='11' class="row">`);
@@ -67,6 +79,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row11Text = localStorage.getItem('rowText11')
+var saveBtn = $('.saveBtn');
+var text11 = $('#text11');
+text11.val(row11Text);
+
+saveBtn.on('click',function(){
+    var textValue = text11.val();
+    console.log(textValue);
+    localStorage.setItem('rowText11', textValue);
+    console.log(this);  
+});
 
 
 // 12pm row
@@ -78,6 +101,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row12Text = localStorage.getItem('rowText12')
+var saveBtn = $('.saveBtn');
+var text12 = $('#text12');
+text12.val(row12Text);
+
+saveBtn.on('click',function(){
+    var textValue = text12.val();
+    console.log(textValue);
+    localStorage.setItem('rowText12', textValue);
+    console.log(this);  
+});
 
 
 // 1pm row
@@ -89,6 +123,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row1Text = localStorage.getItem('rowText1')
+var saveBtn = $('.saveBtn');
+var text1 = $('#text1');
+text1.val(row1Text);
+
+saveBtn.on('click',function(){
+    var textValue = text1.val();
+    console.log(textValue);
+    localStorage.setItem('rowText1', textValue);
+    console.log(this);  
+});
 
 // 2pm row
 var row = $(`<div data-time='2' id='2' class="row">`);
@@ -99,6 +144,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row2Text = localStorage.getItem('rowText2')
+var saveBtn = $('.saveBtn');
+var text2 = $('#text2');
+text2.val(row2Text);
+
+saveBtn.on('click',function(){
+    var textValue = text2.val();
+    console.log(textValue);
+    localStorage.setItem('rowText2', textValue);
+    console.log(this);  
+});
 
 // 3pm row
 var row = $(`<div data-time='3' id='3' class="row">`);
@@ -109,6 +165,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row3Text = localStorage.getItem('rowText3')
+var saveBtn = $('.saveBtn');
+var text3 = $('#text3');
+text3.val(row3Text);
+
+saveBtn.on('click',function(){
+    var textValue = text3.val();
+    console.log(textValue);
+    localStorage.setItem('rowText3', textValue);
+    console.log(this);  
+});
 
 // 4pm row
 var row = $(`<div data-time='4' id='4' class="row">`);
@@ -119,6 +186,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row4Text = localStorage.getItem('rowText4')
+var saveBtn = $('.saveBtn');
+var text4 = $('#text4');
+text4.val(row4Text);
+
+saveBtn.on('click',function(){
+    var textValue = text4.val();
+    console.log(textValue);
+    localStorage.setItem('rowText4', textValue);
+    console.log(this);  
+});
 
 // 5pm row
 var row = $(`<div data-time='5' id='5' class="row">`);
@@ -129,11 +207,17 @@ row.append(col1);
 row.append(col2);
 row.append(col3);
 $(".container").append(row);
+var row5Text = localStorage.getItem('rowText5')
+var saveBtn = $('.saveBtn');
+var text5 = $('#text5');
+text5.val(row5Text);
 
-
-
-
-
+saveBtn.on('click',function(){
+    var textValue = text5.val();
+    console.log(textValue);
+    localStorage.setItem('rowText5', textValue);
+    console.log(this);  
+});
 });
 
 
